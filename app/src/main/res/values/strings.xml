@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AFIF RAMADHAN_1202154217_Modul1</string>
+    <string name="judul">Makan Malam</string>
+    <string name="sub_judul">dengan Milea</string>
+    <string name="editText_Nama">Masukkan Makanan Disini</string>
+    <string name="editText_Jumlah">Masukkan Jumlah Disini</string>
+    <string name="eatbus">eatbus</string>
+    <string name="abnormal">abnormal</string>
+    <string name="menu">Menu</string>
+    <string name="porsi">Porsi</string>
+    <string name="harga">Harga</string>
+</resources>

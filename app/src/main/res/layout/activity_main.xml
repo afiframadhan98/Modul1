@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.example.com.afiframadhan_1202154217_modul1.MainActivity">
+
+    <!-- Ini TextView buat Judul -->
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/judul"
+        android:textSize="15pt" />
+
+    <!-- Ini TextView buat Sub Judul -->
+    <TextView
+        android:id="@+id/sub_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/sub_judul"
+        android:textSize="8pt" />
+
+    <!-- Ini EditText buat Nama Makanan -->
+    <EditText
+        android:id="@+id/editText_makanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub_judul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:ems="15"
+        android:hint="@string/editText_Nama" />
+
+    <!-- Ini EditText buat Jumlah Makanan -->
+    <EditText
+        android:id="@+id/editText_jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_makanan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:ems="15"
+        android:hint="@string/editText_Jumlah" />
+
+    <!-- Ini Button buat Eatbus -->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignLeft="@+id/editText_jumlah"
+        android:layout_alignStart="@+id/editText_jumlah"
+        android:layout_below="@+id/editText_jumlah"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="9"
+        android:onClick="launchSecondActivityEatbus"
+        android:text="@string/eatbus"
+        android:textColor="@android:color/background_light" />
+
+    <!-- Ini Button buat Abnormal -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_jumlah"
+        android:layout_alignRight="@+id/editText_jumlah"
+        android:layout_below="@+id/editText_jumlah"
+        android:layout_marginTop="59dp"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="9"
+        android:onClick="launchSecondActivityAbnormal"
+        android:text="@string/abnormal"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>
